@@ -1,0 +1,26 @@
+.recent-thumbnail h2{
+    font-weight: bolder;
+    font-size: 2.8em;
+}
+.recent-thumbnail label{
+    font-size: 2em;
+    color: rgb(194,22,33);
+}
+.recent-thumbnail .brief .img{
+    display: inline-block;
+    float: left;
+    width: 20%;
+}
+.recent-thumbnail .brief{
+    margin-bottom: 10px;
+}
+.recent-thumbnail .brief p{
+    display: inline-block;
+    float: right;
+    font-size: 1.2em;
+    width: 70%;
+}
+.recent-thumbnail .caption .btn{
+    clear: both;
+    /*float: right;*/
+}

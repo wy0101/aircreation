@@ -1,0 +1,81 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title= title
+    link(rel="stylesheet", href="/css/bootstrap.min.css")
+    link(rel='stylesheet', href='/css/home.css')
+    link(rel='stylesheet', href='/css/news.css')
+    script(src="/js/jquery-3.2.1.min.js")
+    script(src="/js/bootstrap.min.js")
+    script(src="js/layout.js")
+  body
+    header
+      img(src="/images/home/Aircreationlogoheader.png", alt="logo")
+      //navbar
+      ul.nav.nav-tabs
+        li
+          a(href="/") 首页
+        li.dropdown
+          a.dropdown-toggle(data-toggle="dropdown", href="#", role="button", aria-haspopup="true", aria-expanded="false") 欢迎
+          ul.dropdown-menu
+            li
+              a(href="/welcomeus") 关于我们
+            li
+              a(href="welcomebenefit") The benefits
+            li
+              a(href="welcomevisit") Visit our factory
+        li.dropdown
+          a.dropdown-toggle(data-toggle="dropdown", href="javascript:void(0)", role="button", aria-haspopup="true", aria-expanded="false") 产品
+          ul.dropdown-menu
+            li
+              a(href="javascript:void(0)") About Us
+            li
+              a(href="javascript:void(0)") The benefits
+            li
+              a(href="javascript:void(0)") Visit our factory
+        li.dropdown
+          a.dropdown-toggle(data-toggle="dropdown", href="javascript:void(0)", role="button", aria-haspopup="true", aria-expanded="false") 新闻
+          ul.dropdown-menu
+            li
+              a(href="newsrecent") Recent news
+            li
+              a(href="newsbulletins") News and Bulletins warning
+            li
+              a(href="newsnewsletter") Newsletter
+        li.dropdown
+          a.dropdown-toggle(data-toggle="dropdown", href="javascript:void(0)", role="button", aria-haspopup="true", aria-expanded="false") 文档
+          ul.dropdown-menu
+            li
+              a(href="docstechnical") Technical data
+            li
+              a(href="docsphotos") Photos Gallery
+            li
+              a(href="docsvideos") Videos Gallery
+        li.dropdown
+          a.dropdown-toggle(data-toggle="dropdown", href="javascript:void(0)", role="button", aria-haspopup="true", aria-expanded="false") 联系我们
+          ul.dropdown-menu
+            li
+              a(href="/contactinfo") Contact information
+            li
+              a(href="/contactfrenchdis") French Distributors
+            li
+              a(href="/contactinterdis") International Distributors
+    
+    div.split.container-fluid
+      div.row
+        div.first.col-sm-3.col-md-3
+        div.second.col-sm-2.col-md-2
+        div.third.col-sm-2.col-md-2
+        div.fourth.col-sm-2.col-md-2
+        div.fifth.col-sm-3.col-md-3
+    //content could be replaced
+    div.replaced-content
+      block content
+
+    div.bottom-content
+      img(src="/images/bottom_content.png",alt="bottom content")
+
+    footer
+      div
+      p Copyright (c) 2017 Air Creation | Terms of Use | Privacy Statement
